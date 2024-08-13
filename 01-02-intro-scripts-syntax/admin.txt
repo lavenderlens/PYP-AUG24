@@ -1,0 +1,9 @@
+gateway
+https://arp.stayahead.com/rgw2/
+
+username
+pyp1
+
+password
+AzureRook45
+
