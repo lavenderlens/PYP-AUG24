@@ -1,0 +1,88 @@
+>>> #ARITHMETIC
+>>> 7 % 3
+1
+>>> 7 ** 3
+343
+>>> 7 // 3
+2
+>>> 7 + 3.5
+10.5
+>>> int(7 + 3.5)
+10
+>>> ["ho"] * 3
+['ho', 'ho', 'ho']
+>>> "ho" * 3
+'hohoho'
+>>> "The meaning of life is " + 42
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> "The meaning of life is " + 42                                            The meaning of life is " + str(42)
+'The meaning of life is 42'
+>>> "The meaning of life is " + str(42)
+'The meaning of life is 42'
+>>> #UNARY
+>>> not False
+True
+>>> not 2
+False
+>>> not ""
+True
+>>> not[1]
+False
+>>> not[]
+True
+>>> #COMPARISON
+>>> "a" > "b"
+False
+>>> #ASCII values compared: a is 97, b is 98 https://www.asciitable.com/
+>>> [1,2,3] < [1,1,4]
+False
+>>> [1,2,3] > [1,1,4]
+True
+>>> [1,2,3] > [1,4,1]
+False
+>>> [1,1,3] > [1,1,4]
+False
+>>> #comparing members in place
+>>> {"a","b","c"} == {"b","a","c"} #sets are UNORDERED
+True
+>>> 3 == 3
+True
+>>> 3 is 3
+<stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
+True
+>>> id(3)
+4328105192
+>>> first_3 = 3
+>>> second_3 = 3
+>>> id(first_3)
+4328105192
+>>> id(second_3)
+4328105192
+>>> # the value 3 is immutable - all instances are the same
+>>> [] == []
+True
+>>> #__eq__ method overridden in list class
+>>> [] is []
+False
+>>> "o" in "bobble"
+True
+>>> "john" in {"name": "john"}
+False
+>>> # dict keys tested for membership NOT values
+>>> "name" in {"name": "john"}
+True
+>>> True and bool(0)
+False
+>>> bool([]) or bool("Hello")
+True
+>>> bool([]) or bool("")
+False
+>>> bool("Hello") or bool([])
+True
+>>> bool("") or  bool([])
+False
+>>> bool([None])
+True
+>>> 
