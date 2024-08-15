@@ -48,3 +48,13 @@ In the example code from yesterday, this is what's going on, commented:
 False # completely evaluates "and" expression so goes on to perform comparison
 >>> 
 ```
+
+At first less readable than an IF- ELIF- ELSE we can leverage the behaviour of the short-circuit operators in many handy ways eg. passing in default values:
+
+```python
+name = input("Enter your name: ") or "friend"
+print(f"Hello {name}")
+```
+If nothing is entered at the prompt, the left hand side is falsey. So Python evaluates the RHS, whuch gets assigned to the variable. 
+
+If a name is entered, the LHS is truthy so it gets evaluated and assigned to the variable.
