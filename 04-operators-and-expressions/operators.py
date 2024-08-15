@@ -157,11 +157,11 @@ print( not (bool(0) or bool(1)) ) #False: true is inverted
 list_1 = [1,2,3]
 list_2 = [1,2,3,4]
 list_3 = [1,2,3]
+# these two expressions are objects and evaluate as objects
+print(list_1 or list_2 == list_3) #TODO [1,2,3] - see /short-circuiting.md
+print(list_1 and list_2 == list_3) #False 
 
-print(list_1 or list_2 == list_3) #TODO [1,2,3]
-print(list_1 and list_2 == list_3) #TODO False
-
-print(list_1 == list_3 or list_2 == list_3) #True
+print(list_1 == list_3 or list_2 == list_3) #True - these are boolean expressions and will always evaluate to other booleans
 
 # operator precedence
 print(10 + 10 * 2)#30 - */ are higher precedence than +-
