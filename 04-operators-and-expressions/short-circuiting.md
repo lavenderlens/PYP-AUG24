@@ -55,6 +55,6 @@ At first less readable than an IF- ELIF- ELSE we can leverage the behaviour of t
 name = input("Enter your name: ") or "friend"
 print(f"Hello {name}")
 ```
-If nothing is entered at the prompt, the left hand side is falsey. So Python evaluates the RHS, whuch gets assigned to the variable. 
+If nothing is entered at the prompt, the left hand side is falsey. So Python evaluates the RHS, which gets assigned to the variable. 
 
 If a name is entered, the LHS is truthy so it gets evaluated and assigned to the variable.
