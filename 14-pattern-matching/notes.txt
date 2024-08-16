@@ -1,0 +1,16 @@
+Pattern Matching
+----------------
+Pattern matching is the testing of a string to determine if it matches some pattern of characters
+For example, an email address follows a pattern: n chars followed by @ followed by n chars followed by . etc.
+Pattern matching is often used for validation but also for parsing data
+A regular expression (regex) is a series of special characters that describes the pattern
+There are many online tools to help you build patterns, e.g. regex101.com and regexr.com
+The re module in the standard library may be used to do pattern matching
+A bunch of signifiers are available to help construct regular expressions
+They are super-specific eg.
+w means ANY word series of characters
+W means ANYTHING OTHER THAN a word series of characters
+d means ANY digit character
+D means ANYTHING OTHER THAN a digit characters
+
+
