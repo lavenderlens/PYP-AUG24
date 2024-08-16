@@ -1,0 +1,60 @@
+Day 1 Quiz
+----------
+1. List some of the characteristics of Python.
+Object-orientated
+CPython based on C, others available
+Free too use, open source
+Named after Monty Python
+Dynamically-typed
+Extensive list of specialist modules/libraries
+
+2. The Python interpreter can be executed in two ways. What are they?
+run as a program (script)
+login and run interactively via python interpreter direct (sometimes called REPL)
+
+3. How should variables and functions be named in Python?
+lowercase with underscores
+descriptively (meaningful)
+
+4. What does a variable contain, and how should it (almost) always be declared?
+contains a name and a value/reference
+values/references should be assigned at declaration time (initialised)
+
+5. Describe each part of the following statement:
+
+x = 12
+
+x is named,
+if variable with that name exists already then 12 is re-assigned
+otherwise its created in memory
+and then 12 is assigned to the variable name
+= is assignment operator
+12 is an int type
+
+6. List 5 of the fundamental data types.
+str, int, float, tuple, list
+bool, set, dict, None, complex -
+https://www.geeksforgeeks.org/complex-numbers/
+
+7. How does one read from a list element/dict key?
+
+my_dict = {"departure_code":"BFS", "destination_code":"LGW"}
+# objects are made differently, props are referenced with dot notation
+my_object.departure_code
+
+dict - my_dict["departure_code"]
+
+list - list_name
+
+8. Name TWO falsey values (values that will convert to False when passed to a bool() wrapper function):
+empty containers: list, tuple, set, dict
+"" (empty string)
+0
+None
+
+9. What value does the number 1 become when passed to a float() wrapper function?
+1.0
+
+10. What value does the string value "Hello" become when passed to a bool() wrapper function?
+True
+

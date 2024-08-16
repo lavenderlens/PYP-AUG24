@@ -1,0 +1,71 @@
+Day 2 Quiz
+----------
+
+1. What is a for loop best suited to do?
+iterating through an array/list/set of objects
+where the length is known
+
+2. When will an optional else clause after a loop run?
+when the initial loop finishes normally, without encountering a break
+
+3. In a match statement, what is the name for the 
+default case that will execute if no match is found?
+_ 
+
+4. What is the keyword required to exit from this loop:
+
+while True:
+    pass
+
+break
+
+5. In a function definition, what syntax denotes 
+the block of code that is the body of the function?
+
+def my_func():
+
+print("hello")
+
+:
+    #indent
+
+6. Which function is pure, a or b?
+
+thing = 1
+def a():
+    print(thing)
+
+def b(thing):
+    print(thing)
+
+b
+
+
+7. Differentiate between a module and a script.
+module will store functions (and classes)
+script will execute code
+
+8 - 10. Python module `my_module` has one function: `my_func`
+Match the following import statements 1-3 
+with the ways a,b,c 
+of referencing my_func in a caller, `my_script`:
+
+1. import my_module
+2. from my_module import *
+3. from my_module import my_func
+
+A my_func()
+B my_module.my_func()
+C my_func()
+
+1. B
+2. A or C
+3. A or C
+
+
+BONUS QUESTION. Which of the above is, 
+in your trainer's opinion, best for readability?
+
+3. 
+
+

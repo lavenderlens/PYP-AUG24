@@ -1,0 +1,65 @@
+Day 3 Quiz
+----------
+
+1. In function parameters,
+*args packs n number of positional arguments into a _____tuple ? 
+**kwargs packs n number of named arguments into a _____dict ?
+
+2. Which of the two functions below has a closure? Note that both functions compile and run. 
+
+def outer_a():
+    lst = []
+    def add_to_lst(item):
+        nonlocal lst
+        lst.append(item)
+        return lst
+    return add_to_lst
+
+lst = []
+def outer_b():
+    def add_to_lst(item):
+        global lst
+        lst.append(item)
+        return lst
+    return add_to_lst
+
+3. How does one access the attributes and methods of an object?
+my_object = MyClass("Martin") #self.name = name
+my_object.
+
+4. Class names should be in what style?
+CamelCase
+
+5. Which dunder method is called (indirectly) when you FIRST create an object of a class?
+__init__(self):
+
+6. The first param. of each method in a class is conventionally named self. To what does this param. refer?
+The current object under construction which will eventually be referenced by a global variable
+
+7. How many objects are created in the following 2 LOC?
+
+class_a = ClassA()
+class_b = class_a
+
+just one - class_b "uses" or references class_a
+
+8. Which dunder method should we override in our own custom classes to obtain a meaningful representation of our objects' properties, once we have made the object?
+__str__
+
+class_a = ClassA() #__str__(self): pass
+class_b = class_a
+
+print(class_a) #equivalent to
+print(class_a.__str__()) #
+
+9. Write a *list slice* to return a new list with every other (even) number from the following list:
+
+nums = [1,2,3,4,5,6,7,8,9]
+nums[1::2]
+OR, by list comprehension to TEST each number for evenness
+even_nums = [num for num in nums if num % 2 ==0]
+this works for any sequence of numbers
+nums2 = [3,2,4,1,1,1,4,5,6,8,22]
+
+10. Using *list comprehension*, return a list from the same list, nums, with just the numbers 5 or less
+less_than_5 = [num for num in nums if num <=5]
